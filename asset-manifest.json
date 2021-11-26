@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/shoe-store/static/css/main.d646bf7f.chunk.css",
+    "main.js": "/shoe-store/static/js/main.c7c7c085.chunk.js",
+    "main.js.map": "/shoe-store/static/js/main.c7c7c085.chunk.js.map",
+    "runtime-main.js": "/shoe-store/static/js/runtime-main.22d407c0.js",
+    "runtime-main.js.map": "/shoe-store/static/js/runtime-main.22d407c0.js.map",
+    "static/js/2.5fc8539e.chunk.js": "/shoe-store/static/js/2.5fc8539e.chunk.js",
+    "static/js/2.5fc8539e.chunk.js.map": "/shoe-store/static/js/2.5fc8539e.chunk.js.map",
+    "index.html": "/shoe-store/index.html",
+    "static/css/main.d646bf7f.chunk.css.map": "/shoe-store/static/css/main.d646bf7f.chunk.css.map",
+    "static/js/2.5fc8539e.chunk.js.LICENSE.txt": "/shoe-store/static/js/2.5fc8539e.chunk.js.LICENSE.txt",
+    "static/media/banner.5fd2c60d.jpg": "/shoe-store/static/media/banner.5fd2c60d.jpg",
+    "static/media/styles.css": "/shoe-store/static/media/footer-sprite.b3d5697a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22d407c0.js",
+    "static/js/2.5fc8539e.chunk.js",
+    "static/css/main.d646bf7f.chunk.css",
+    "static/js/main.c7c7c085.chunk.js"
+  ]
+}
