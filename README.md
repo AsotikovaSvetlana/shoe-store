@@ -1,7 +1,7 @@
 ﻿# Shoe Store
 [![Build status](https://ci.appveyor.com/api/projects/status/gu7hwme2l5w8q440?svg=true)](https://ci.appveyor.com/project/AsotikovaSvetlana/shoe-store)
 
-https://asotikovasvetlana.github.io/
+https://asotikovasvetlana.github.io/shoe-store/
 
 Интернет-магазин обуви. Задача заключалась в создании работающего приложения, всеми основными функциями которого можно пользоваться.
 
