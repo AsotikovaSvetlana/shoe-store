@@ -1,6 +1,6 @@
 ﻿# Shoe Store
 
-<h3 align="center"><a href="" target="_blank">Demo</a></h3>
+<h3 align="center"><a href="https://shoe-store-asotikovasvetlana.vercel.app/" target="_blank">Demo</a></h3>
 
 Интернет-магазин обуви. Задача заключалась в создании работающего приложения, всеми основными функциями которого можно пользоваться.
 
