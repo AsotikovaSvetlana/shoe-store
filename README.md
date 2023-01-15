@@ -1,32 +1,32 @@
 ﻿# Shoe Store
-[![Build status](https://ci.appveyor.com/api/projects/status/gu7hwme2l5w8q440?svg=true)](https://ci.appveyor.com/project/AsotikovaSvetlana/shoe-store)
 
-https://asotikovasvetlana.github.io/shoe-store/
+<h3 align="center"><a href="" target="_blank">Demo</a></h3>
 
 Интернет-магазин обуви. Задача заключалась в создании работающего приложения, всеми основными функциями которого можно пользоваться.
 
 Для хранения состояния корзины и побочных эффектов используется: Redux + Redux Thunk.
 
 Для эмуляции проблем с интернет-соединением на сервере выполняется генерация задержки и ошибки:
+
 ```js
 const fortune = (ctx, body = null, status = 200) => {
-    // Uncomment for delay
-    const delay = randomNumber(1, 10) * 1000;
-    
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            // Uncomment for error generation
-            if (Math.random() > 0.8) {
-              reject(new Error('Something bad happened'));
-              return;
-            }
+  // Uncomment for delay
+  const delay = randomNumber(1, 10) * 1000;
 
-            ctx.response.status = status;
-            ctx.response.body = body;
-            resolve();
-        }, delay);
-    })
-}
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Uncomment for error generation
+      if (Math.random() > 0.8) {
+        reject(new Error("Something bad happened"));
+        return;
+      }
+
+      ctx.response.status = status;
+      ctx.response.body = body;
+      resolve();
+    }, delay);
+  });
+};
 ```
 
 ## Содержание
@@ -49,15 +49,17 @@ const fortune = (ctx, body = null, status = 200) => {
 ![Footer](./assets/footer-menu.png)
 
 Из шапки можно попасть на следующие экраны:
-* Логотип и ссылка "Главная" - ведут на главную страницу, URL - "/"
-* Каталог - ведёт на страницу каталога, URL - "/catalog.html"
-* О магазине - ведёт на страницу "О магазине", URL - "/about.html"
-* Контакты - ведёт на страницу "Контакты", URL - "/contacts.html"
+
+- Логотип и ссылка "Главная" - ведут на главную страницу, URL - "/"
+- Каталог - ведёт на страницу каталога, URL - "/catalog.html"
+- О магазине - ведёт на страницу "О магазине", URL - "/about.html"
+- Контакты - ведёт на страницу "Контакты", URL - "/contacts.html"
 
 Из футера можно попасть на следующие экраны:
-* О магазине - ведёт на страницу "О магазине", URL - "/about.html"
-* Каталог - ведёт на страницу каталога, URL - "/catalog.html"
-* Контакты - ведёт на страницу "Контакты", URL - "/contacts.html"
+
+- О магазине - ведёт на страницу "О магазине", URL - "/about.html"
+- Каталог - ведёт на страницу каталога, URL - "/catalog.html"
+- Контакты - ведёт на страницу "Контакты", URL - "/contacts.html"
 
 ## Описание экранов
 
@@ -123,6 +125,7 @@ const fortune = (ctx, body = null, status = 200) => {
 ![Item](./assets/catalog-item-comments.png)
 
 Ключевые моменты:
+
 1. При загрузке показывается лоадер.
 1. Для загрузки полной информации о товаре: GET /api/items/:id, где id - это id товара.
 1. Слева выводится картинка.
@@ -151,11 +154,12 @@ const fortune = (ctx, body = null, status = 200) => {
 Если в корзине товаров нет вообще, розовый индикатор не отображается.
 
 Блок оформления заказа позволяет оформить заказ - POST /api/order. В теле - JSON:
+
 ```json
 {
   "owner": {
     "phone": "+7xxxxxxxxxxx",
-    "address": "Moscow City",
+    "address": "Moscow City"
   },
   "items": [
     {
